@@ -1,9 +1,18 @@
-import { Button, ButtonGroup } from '@chakra-ui/react';
-
+import { Flex, HStack, Heading, Spacer, Text } from '@chakra-ui/react';
+import AppDescription from './components/AppDescription';
 function App() {
 	return (
 		<>
-			<Button colorScheme="blue">Button</Button>
+			<Flex as="nav" p={5}>
+				<Heading>EJobs</Heading>
+				<Spacer />
+				<HStack spacing={5}>
+					<Text>Pricing</Text>
+					<Text>About</Text>
+					<Text>Contact</Text>
+				</HStack>
+			</Flex>
+			<AppDescription />
 		</>
 	);
 }
