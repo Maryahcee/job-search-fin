@@ -1,41 +1,47 @@
-import { Box, Container, Text } from '@chakra-ui/react';
+import { Box, Center, Container, Text } from '@chakra-ui/react';
 
 export default function AppDescription() {
 	return (
 		<>
-			<Box>
+			<Container maxW={'-moz-max-content'} p={0}>
 				<Box
-					h={'80'}
-					sx={{
-						content: `''`,
-						bgSize: 'cover',
-						opacity: 0.5,
-						width: 'full',
-						bgColor: 'black',
-						bgBlendMode: '0.9',
-						bgImage:
-							'https://www.utep.edu/extendeduniversity/utepconnect/blog/june-2019/how-an-online-degree-can-prepare-you-for-remote-positions.jpg',
-					}}
-					backgroundPosition={'center'}
-					backgroundRepeat={'no-repeat'}
-					backgroundSize={'cover'}
-					backgroundBlendMode={'darken'}
-				></Box>
-				<Container
-					textAlign="center"
-					maxW={'xl'}
-					display={'flex'}
-					centerContent
-					h={'full'}
-					justifyContent={'center'}
-					mt={-60}
-					opacity={1}
+					position="relative"
+					h={80}
+					bgImage="url('https://www.utep.edu/extendeduniversity/utepconnect/blog/june-2019/how-an-online-degree-can-prepare-you-for-remote-positions.jpg')"
+					bgSize="cover"
+					bgPosition="center"
+					bgRepeat="no-repeat"
+					left={0}
+					right={0}
+					width="100vw"
+					maxWidth="100%"
 				>
-					<Text as="b" fontSize="4xl">
-						The leading English speaking Jobs <br></br> listing in Finland
-					</Text>
-				</Container>
-			</Box>
+					<Box
+						position="absolute"
+						top={0}
+						left={0}
+						w="full"
+						h="full"
+						bg="white"
+						opacity={0.5}
+						bgBlendMode="multiply"
+					/>
+					<Center
+						position="relative"
+						zIndex={1}
+						textAlign="center"
+						display="flex"
+						justifyContent="center"
+						minH={80}
+					>
+						<Text as="b" fontSize="4xl">
+							The leading English speaking Jobs
+							<br />
+							listing in Finland
+						</Text>
+					</Center>
+				</Box>
+			</Container>
 		</>
 	);
 }
