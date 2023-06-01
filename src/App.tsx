@@ -1,18 +1,13 @@
-import { Flex, HStack, Heading, Spacer, Text } from '@chakra-ui/react';
+import NavBar from './components/NavBar';
 import AppDescription from './components/AppDescription';
+import SearchJobs from './components/SearchJobs';
+
 function App() {
 	return (
 		<>
-			<Flex as="nav" p={5}>
-				<Heading>EJobs</Heading>
-				<Spacer />
-				<HStack spacing={5}>
-					<Text>Pricing</Text>
-					<Text>About</Text>
-					<Text>Contact</Text>
-				</HStack>
-			</Flex>
+			<NavBar />
 			<AppDescription />
+			<SearchJobs />
 		</>
 	);
 }
