@@ -2,7 +2,7 @@ import NavBar from './components/NavBar';
 import AppDescription from './components/AppDescription';
 import SearchJobs from './components/SearchJobs';
 
-function App() {
+const App = () => {
 	return (
 		<>
 			<NavBar />
@@ -10,6 +10,6 @@ function App() {
 			<SearchJobs />
 		</>
 	);
-}
+};
 
 export default App;
