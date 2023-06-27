@@ -38,7 +38,7 @@ const AppDescription = () => {
 							<Text as="b" fontSize="4xl">
 								The leading English speaking Jobs
 								<br />
-								listing in Finland
+								listing
 							</Text>
 						</Center>
 					</Box>
