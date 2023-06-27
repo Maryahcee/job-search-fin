@@ -1,5 +1,7 @@
+import { Box } from '@chakra-ui/react';
+
 const JobFilter = () => {
-	return <div>JobFilter</div>;
+	return <Box backgroundColor={'white'} width={'80%'} margin={'0 auto'}></Box>;
 };
 
 export default JobFilter;
