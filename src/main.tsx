@@ -7,7 +7,13 @@ const fonts = {
 	body: 'Playfair Display',
 	heading: 'Libre Bakserville',
 };
-const theme = extendTheme({ fonts });
+
+const variants = {
+	_hover: {
+		backgroundColor: 'none',
+	},
+};
+const theme = extendTheme({ fonts, variants });
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
