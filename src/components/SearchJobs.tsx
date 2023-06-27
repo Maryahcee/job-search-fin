@@ -1,12 +1,15 @@
 import {
-	Container,
-	Text,
 	Box,
 	Input,
 	Grid,
 	GridItem,
 	Select,
 	Button,
+	Stack,
+	Badge,
+	Checkbox,
+	color,
+	Divider,
 } from '@chakra-ui/react';
 
 const SearchJobs = () => {
@@ -42,7 +45,27 @@ const SearchJobs = () => {
 							</Button>
 						</GridItem>
 					</Grid>
+					<Stack direction={'row'} paddingTop={3}>
+						<Button px={8} borderRadius={12}>
+							<Checkbox bgColor={'white'} marginRight={2}></Checkbox>
+							<span>Freelance</span>
+						</Button>
+						<Button px={8} borderRadius={10}>
+							<Checkbox bgColor={'white'} marginRight={2}></Checkbox>
+							<span>Full-time</span>
+						</Button>
+						<Button px={8} borderRadius={10}>
+							<Checkbox bgColor={'white'} marginRight={2}></Checkbox>
+							<span>Internship</span>
+						</Button>
+
+						<Button px={8} borderRadius={10}>
+							<Checkbox bgColor={'white'} marginRight={2}></Checkbox>
+							<span>Part-time</span>
+						</Button>
+					</Stack>
 				</Box>
+				<Divider></Divider>
 			</Box>
 		</>
 	);
