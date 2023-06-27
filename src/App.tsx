@@ -3,6 +3,7 @@ import AppDescription from './components/AppDescription';
 import SearchJobs from './components/SearchJobs';
 import JobFilter from './components/JobFilter';
 import Cards from './components/Cards';
+import Footer from './components/Footer';
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 			<SearchJobs />
 			<JobFilter />
 			<Cards />
+			<Footer />
 		</>
 	);
 };
